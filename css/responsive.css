@@ -1,0 +1,368 @@
+/* ==========================================================================
+   HennaByDua - Responsive Stylesheet (responsive.css)
+   Breakpoints: 1200px, 991px, 768px, 576px, 400px
+   ========================================================================== */
+
+/* --- LARGE SCREENS & DESKTOPS (<= 1200px) --- */
+@media (max-width: 1200px) {
+  .container {
+    max-width: 1050px;
+  }
+
+  .nav-menu {
+    gap: 20px;
+  }
+
+  .nav-link {
+    font-size: 0.88rem;
+  }
+
+  .packages-grid {
+    gap: 20px;
+  }
+
+  .why-choose-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* --- TABLETS & MEDIUM SCREENS (<= 991px) --- */
+@media (max-width: 991px) {
+  .section {
+    padding: 70px 0;
+  }
+
+  /* Header & Mobile Navigation */
+  .mobile-toggle {
+    display: flex;
+  }
+
+  .nav-actions .btn {
+    display: none; /* Hide header book now on small screens or keep in drawer */
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -320px;
+    width: 300px;
+    height: 100vh;
+    background-color: var(--color-cream);
+    box-shadow: -10px 0 35px rgba(45, 22, 13, 0.15);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 90px 28px 40px;
+    gap: 0;
+    overflow-y: auto;
+    transition: right 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: 1000;
+    border-left: 1px solid var(--color-border);
+  }
+
+  .nav-menu.active {
+    right: 0;
+  }
+
+  .nav-item {
+    width: 100%;
+    border-bottom: 1px solid var(--color-border-light);
+  }
+
+  .nav-link {
+    padding: 14px 0;
+    font-size: 1rem;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .nav-link::after {
+    display: none;
+  }
+
+  .dropdown-menu {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    box-shadow: none;
+    border: none;
+    background: var(--color-beige-light);
+    border-radius: var(--radius-sm);
+    margin-bottom: 10px;
+    width: 100%;
+    display: none;
+    padding: 6px 0;
+  }
+
+  .dropdown-menu.show {
+    display: block;
+  }
+
+  .dropdown-link {
+    padding: 10px 16px;
+    font-size: 0.85rem;
+  }
+
+  .mobile-drawer-cta {
+    display: block;
+    width: 100%;
+    margin-top: 24px;
+    text-align: center;
+  }
+
+  /* Hero Section */
+  .hero-section {
+    min-height: auto;
+    padding-top: 130px;
+    padding-bottom: 70px;
+    background-attachment: scroll;
+  }
+
+  .hero-ornament-bg {
+    display: none;
+  }
+
+  /* About Grid */
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .about-image-frame {
+    max-width: 480px;
+    margin: 0 auto;
+    border-radius: 160px 160px 24px 24px;
+  }
+
+  .about-image-frame img {
+    height: 440px;
+  }
+
+  .about-floating-badge {
+    right: 10px;
+    bottom: -15px;
+  }
+
+  /* Services Grid */
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .service-detail-row {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 30px;
+  }
+
+  .service-detail-row:nth-child(even) .service-detail-image {
+    order: 0;
+  }
+
+  .service-detail-image {
+    height: 320px;
+  }
+
+  /* Bridal Grid */
+  .bridal-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  /* Packages Grid */
+  .packages-grid {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .package-card.featured {
+    transform: none;
+  }
+  .package-card.featured:hover {
+    transform: translateY(-8px);
+  }
+
+  /* Testimonials Grid */
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+    max-width: 580px;
+    margin: 0 auto;
+  }
+
+  /* Contact Layout */
+  .contact-layout {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  /* Footer */
+  .footer-top {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 36px;
+  }
+
+  /* Lightbox Nav Buttons */
+  .lightbox-prev {
+    left: 10px;
+  }
+  .lightbox-next {
+    right: 10px;
+  }
+}
+
+/* --- MOBILE PHONES (<= 767px) --- */
+@media (max-width: 767px) {
+  .section {
+    padding: 60px 0;
+  }
+
+  .section-header {
+    margin-bottom: 38px;
+  }
+
+  .btn {
+    padding: 12px 26px;
+    font-size: 0.88rem;
+    width: 100%;
+  }
+
+  .btn-group {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  /* Brand Header */
+  .brand-logo-img {
+    width: 44px;
+    height: 44px;
+  }
+
+  .brand-title {
+    font-size: 1.35rem;
+  }
+
+  .brand-subtitle {
+    font-size: 0.62rem;
+  }
+
+  /* Hero Section */
+  .hero-stats {
+    gap: 20px;
+    justify-content: space-between;
+  }
+
+  .hero-stat-number {
+    font-size: 1.8rem;
+  }
+
+  /* Services Grid */
+  .services-grid {
+    grid-template-columns: 1fr;
+    max-width: 440px;
+    margin: 0 auto;
+  }
+
+  /* Gallery Filters & Grid */
+  .gallery-filters {
+    gap: 8px;
+  }
+
+  .filter-btn {
+    padding: 8px 16px;
+    font-size: 0.8rem;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 16px;
+  }
+
+  .gallery-item {
+    height: 280px;
+  }
+
+  /* Why Choose Us */
+  .why-choose-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  /* Booking Banner */
+  .booking-banner {
+    padding: 44px 24px;
+  }
+
+  /* Booking Form */
+  .booking-form-card {
+    padding: 26px 20px;
+  }
+
+  .form-grid-2 {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .contact-info-card {
+    padding: 28px 20px;
+  }
+
+  /* Footer */
+  .footer-top {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* Lightbox */
+  .lightbox-modal {
+    padding: 16px;
+  }
+
+  .lightbox-close {
+    top: -38px;
+    font-size: 1.7rem;
+  }
+
+  .lightbox-nav-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  /* Back to Top */
+  .back-to-top {
+    bottom: 20px;
+    right: 20px;
+    width: 42px;
+    height: 42px;
+    font-size: 1rem;
+  }
+}
+
+/* --- SMALL MOBILE DEVICES (<= 480px) --- */
+@media (max-width: 480px) {
+  .about-features-list {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .about-floating-badge {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    margin-top: 16px;
+    max-width: 100%;
+  }
+
+  .comparison-table th,
+  .comparison-table td {
+    padding: 10px 12px;
+    font-size: 0.82rem;
+  }
+}

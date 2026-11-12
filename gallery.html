@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore HennaByDua Mehndi Gallery - Bridal Henna, Arabic Mehndi, Front Hand, Back Hand, Full Hand, and Feet Mehndi Designs with Interactive Lightbox.">
+  <title>Mehndi Gallery | HennaByDua Luxury Mehndi Artist</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       TOP NAVIGATION
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="brand-link" aria-label="HennaByDua Home">
+        <img src="images/logo.png" alt="HennaByDua Logo" class="brand-logo-img">
+        <div class="brand-text">
+          <span class="brand-title">HennaByDua</span>
+          <span class="brand-subtitle">Mehndi Artist</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" id="primaryNav" aria-label="Main Navigation">
+        <div class="nav-item">
+          <a href="index.html" class="nav-link">Home</a>
+        </div>
+        <div class="nav-item">
+          <a href="about.html" class="nav-link">About</a>
+        </div>
+        <div class="nav-item">
+          <a href="services.html" class="nav-link dropdown-trigger" aria-haspopup="true">
+            Services <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="services.html#bridal" class="dropdown-link"><i class="fa-solid fa-crown"></i> Bridal Mehndi</a>
+            <a href="services.html#arabic" class="dropdown-link"><i class="fa-solid fa-feather-pointed"></i> Arabic Mehndi</a>
+            <a href="services.html#traditional" class="dropdown-link"><i class="fa-solid fa-gem"></i> Traditional Mehndi</a>
+            <a href="services.html#indo-arabic" class="dropdown-link"><i class="fa-solid fa-wand-magic-sparkles"></i> Indo-Arabic Mehndi</a>
+            <a href="services.html#minimal" class="dropdown-link"><i class="fa-solid fa-circle-dot"></i> Minimal Mehndi</a>
+            <a href="services.html#party" class="dropdown-link"><i class="fa-solid fa-champagne-glasses"></i> Party & Festival</a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="gallery.html" class="nav-link active">Gallery</a>
+        </div>
+        <div class="nav-item">
+          <a href="bridal.html" class="nav-link">Bridal Mehndi</a>
+        </div>
+        <div class="nav-item">
+          <a href="packages.html" class="nav-link">Packages</a>
+        </div>
+        <div class="nav-item">
+          <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+
+        <div class="mobile-drawer-cta">
+          <a href="contact.html" class="btn btn-primary btn-sm">Book Appointment</a>
+        </div>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="contact.html" class="btn btn-primary btn-sm">Book Now</a>
+        <button class="mobile-toggle" aria-label="Toggle Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-overlay" aria-hidden="true"></div>
+
+  <!-- ==========================================================================
+       PAGE HERO
+       ========================================================================== -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb-list">
+        <a href="index.html">Home</a>
+        <span class="breadcrumb-separator"><i class="fa-solid fa-chevron-right"></i></span>
+        <span>Mehndi Gallery</span>
+      </div>
+      <h1 class="page-hero-title">The Art Gallery</h1>
+      <p class="page-hero-description">
+        Browse our comprehensive portfolio of bridal, Arabic, traditional, front hand, back hand, and feet mehndi artistry. Click any photo to preview in high resolution.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       GALLERY FILTERS & GRID
+       ========================================================================== -->
+  <section class="section">
+    <div class="container">
+
+      <!-- Category Filter Tabs -->
+      <div class="gallery-filters animate-on-scroll" role="tablist">
+        <button class="filter-btn active" data-filter="all">All Designs</button>
+        <button class="filter-btn" data-filter="bridal">Bridal Mehndi</button>
+        <button class="filter-btn" data-filter="arabic">Arabic Mehndi</button>
+        <button class="filter-btn" data-filter="fronthand">Front Hand Designs</button>
+        <button class="filter-btn" data-filter="backhand">Back Hand Designs</button>
+        <button class="filter-btn" data-filter="fullhand">Full Hand Designs</button>
+        <button class="filter-btn" data-filter="feet">Feet Mehndi</button>
+      </div>
+
+      <!-- Gallery Grid Items -->
+      <div class="gallery-grid" id="mainGalleryGrid">
+
+        <!-- 1. Bridal 1 -->
+        <div class="gallery-item animate-on-scroll" data-category="bridal">
+          <img src="images/gallery/bridal-1.jpg" alt="Royal Bridal Palms with Fine Checks and Peacock Motifs">
+          <div class="gallery-overlay">
+            <span class="gallery-zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            <span class="gallery-category-tag">Bridal Mehndi</span>
+            <h4 class="gallery-title">The Royal Maharani Palms</h4>
+          </div>
+        </div>
+
+        <!-- 2. Arabic 1 -->
+        <div class="gallery-item animate-on-scroll" data-category="arabic">
+          <img src="images/gallery/arabic-1.jpg" alt="Modern Arabic Floral Vine with Shading">
+          <div class="gallery-overlay">
+            <span class="gallery-zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            <span class="gallery-category-tag">Arabic Mehndi</span>
+            <h4 class="gallery-title">Cascade of Damascus Roses</h4>
+          </div>
+        </div>
+
+        <!-- 3. Front Hand 1 -->
+        <div class="gallery-item animate-on-scroll" data-category="fronthand">
+          <img src="images/gallery/fronthand-1.jpg" alt="Intricate Front Hand Mandala with Finger Rings">
+          <div class="gallery-overlay">
+            <span class="gallery-zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            <span class="gallery-category-tag">Front Hand Designs</span>
+            <h4 class="gallery-title">Celestial Sunburst Mandala</h4>
+          </div>
+        </div>
+
+        <!-- 4. Back Hand 1 -->
+        <div class="gallery-item animate-on-scroll" data-category="backhand">
+          <img src="images/gallery/backhand-1.jpg" alt="Delicate Glove Lace Back Hand Pattern">
+          <div class="gallery-overlay">
+            <span class="gallery-zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            <span class="gallery-category-tag">Back Hand Designs</span>
+            <h4 class="gallery-title">Vintage Lace & Pearl Cuff</h4>
+          </div>
+        </div>
+
+        <!-- 5. Full Hand 1 -->
+        <div class="gallery-item animate-on-scroll" data-category="fullhand">
+          <img src="images/gallery/fullhand-1.jpg" alt="Complete Symmetrical Full Arm Bridal Artwork">
+          <div class="gallery-overlay">
+            <span class="gallery-zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            <span class="gallery-category-tag">Full Hand Designs</span>
+            <h4 class="gallery-title">The Eternal Symphony</h4>
+          </div>
+        </div>
+
+        <!-- 6. Feet 1 -->
+        <div class="gallery-item animate-on-scroll" data-category="feet">
+          <img src="images/gallery/feet-1.jpg" alt="Bridal Feet Payal Anklet Henna Art">
+          <div class="gallery-overlay">
+            <span class="gallery-zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            <span class="gallery-category-tag">Feet Mehndi</span>
+            <h4 class="gallery-title">Royal Payal & Lotus Anklet</h4>
+          </div>
+        </div>
+
+        <!-- 7. Bridal 2 -->
+        <div class="gallery-item animate-on-scroll" data-category="bridal">
+          <img src="images/gallery/bridal-2.jpg" alt="Full Arm Royal Bridal Wedding Composition">
+          <div class="gallery-overlay">
+            <span class="gallery-zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            <span class="gallery-category-tag">Bridal Mehndi</span>
+            <h4 class="gallery-title">The Shehnai & Doli Storyboard</h4>
+          </div>
+        </div>
+
+        <!-- 8. Arabic 2 -->
+        <div class="gallery-item animate-on-scroll" data-category="arabic">
+          <img src="images/gallery/arabic-2.jpg" alt="Contemporary Gulf Arabic Floral Trail">
+          <div class="gallery-overlay">
+            <span class="gallery-zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            <span class="gallery-category-tag">Arabic Mehndi</span>
+            <h4 class="gallery-title">Sultana's Garden Trail</h4>
+          </div>
+        </div>
+
+        <!-- 9. Front Hand 2 -->
+        <div class="gallery-item animate-on-scroll" data-category="fronthand">
+          <img src="images/gallery/fronthand-2.jpg" alt="Front Palm Concentric Floral Lotus Mandala">
+          <div class="gallery-overlay">
+            <span class="gallery-zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            <span class="gallery-category-tag">Front Hand Designs</span>
+            <h4 class="gallery-title">Padma Lotus Sacred Palm</h4>
+          </div>
+        </div>
+
+        <!-- 10. Back Hand 2 -->
+        <div class="gallery-item animate-on-scroll" data-category="backhand">
+          <img src="images/gallery/backhand-2.jpg" alt="Jewelry Inspired Back of Hand Finger Rings">
+          <div class="gallery-overlay">
+            <span class="gallery-zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            <span class="gallery-category-tag">Back Hand Designs</span>
+            <h4 class="gallery-title">Hathphool Filigree Ring</h4>
+          </div>
+        </div>
+
+        <!-- 11. Full Hand 2 -->
+        <div class="gallery-item animate-on-scroll" data-category="fullhand">
+          <img src="images/gallery/fullhand-2.jpg" alt="Bridal Dense Full Arm Wedding Henna">
+          <div class="gallery-overlay">
+            <span class="gallery-zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            <span class="gallery-category-tag">Full Hand Designs</span>
+            <h4 class="gallery-title">Imperial Peacock Court</h4>
+          </div>
+        </div>
+
+        <!-- 12. Feet 2 -->
+        <div class="gallery-item animate-on-scroll" data-category="feet">
+          <img src="images/gallery/feet-2.jpg" alt="Intricate Bridal Feet & Toes Mandala">
+          <div class="gallery-overlay">
+            <span class="gallery-zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            <span class="gallery-category-tag">Feet Mehndi</span>
+            <h4 class="gallery-title">Golden Soles & Ankle Mandala</h4>
+          </div>
+        </div>
+
+        <!-- 13. Arabic 3 -->
+        <div class="gallery-item animate-on-scroll" data-category="arabic">
+          <img src="images/gallery/arabic-3.jpg" alt="Bold Shaded Petals and Geometric Negative Space">
+          <div class="gallery-overlay">
+            <span class="gallery-zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            <span class="gallery-category-tag">Arabic Mehndi</span>
+            <h4 class="gallery-title">Moroccan Geometric Bel</h4>
+          </div>
+        </div>
+
+        <!-- 14. Front Hand 3 -->
+        <div class="gallery-item animate-on-scroll" data-category="fronthand">
+          <img src="images/gallery/fronthand-3.jpg" alt="Intricate Jaal Netting with Rose Petal Borders">
+          <div class="gallery-overlay">
+            <span class="gallery-zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            <span class="gallery-category-tag">Front Hand Designs</span>
+            <h4 class="gallery-title">Rosewater Jaal Tapestry</h4>
+          </div>
+        </div>
+
+        <!-- 15. Back Hand 3 -->
+        <div class="gallery-item animate-on-scroll" data-category="backhand">
+          <img src="images/gallery/backhand-3.jpg" alt="Delicate Bracelet and Diamond Cut Negative Space">
+          <div class="gallery-overlay">
+            <span class="gallery-zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            <span class="gallery-category-tag">Back Hand Designs</span>
+            <h4 class="gallery-title">Diamond Chevron Cuff</h4>
+          </div>
+        </div>
+
+        <!-- 16. Bridal 3 -->
+        <div class="gallery-item animate-on-scroll" data-category="bridal">
+          <img src="images/bridal/bridal-3.jpg" alt="Exquisite Bridal Palms and Wrist Detailing">
+          <div class="gallery-overlay">
+            <span class="gallery-zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            <span class="gallery-category-tag">Bridal Mehndi</span>
+            <h4 class="gallery-title">The Royal Vow Storyboard</h4>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       BOOKING CTA BANNER
+       ========================================================================== -->
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+      <div class="booking-banner animate-on-scroll">
+        <div class="booking-banner-content">
+          <div class="gold-badge" style="background: rgba(214, 173, 112, 0.2); color: var(--color-light-gold);">
+            Custom Design Orders
+          </div>
+          <h2 style="color: var(--color-cream);">Found an Image You Love?</h2>
+          <p>
+            You can send your favorite screenshots directly to Dua. We will customize every pattern to match your personality and celebration perfectly.
+          </p>
+          <div class="btn-group" style="justify-content: center;">
+            <a href="contact.html" class="btn btn-primary btn-lg">
+              <i class="fa-regular fa-calendar-check"></i>
+              <span>Book This Style</span>
+            </a>
+            <a href="#" class="btn btn-whatsapp btn-lg btn-whatsapp-trigger">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span>Send Image on WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       LIGHTBOX PREVIEW MODAL
+       ========================================================================== -->
+  <div class="lightbox-modal" id="lightboxModal" role="dialog" aria-modal="true" aria-label="Mehndi Design Preview">
+    <div class="lightbox-content-box">
+      <button class="lightbox-close" aria-label="Close Lightbox">&times;</button>
+      <button class="lightbox-nav-btn lightbox-prev" aria-label="Previous Image"><i class="fa-solid fa-chevron-left"></i></button>
+      <button class="lightbox-nav-btn lightbox-next" aria-label="Next Image"><i class="fa-solid fa-chevron-right"></i></button>
+      <div class="lightbox-img-wrapper">
+        <img src="" alt="Mehndi Design Preview" class="lightbox-img">
+      </div>
+      <div class="lightbox-caption">
+        <h4 class="lightbox-title">Mehndi Design</h4>
+        <p class="lightbox-desc">HennaByDua Luxury Collection</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo-row">
+            <img src="images/logo.png" alt="HennaByDua Logo" class="footer-logo-img">
+            <div>
+              <span class="footer-brand-title">HennaByDua</span>
+              <span class="footer-brand-tagline">Mehndi Artist</span>
+            </div>
+          </div>
+          <p class="footer-desc">
+            Bespoke luxury mehndi art crafted with 100% pure organic Rajasthani henna. Bringing timeless elegance, intricate symmetry, and romantic storytelling to brides worldwide.
+          </p>
+          <div class="footer-social-icons">
+            <a href="#" class="footer-social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="footer-social-btn btn-whatsapp-trigger" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#" class="footer-social-btn" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+            <a href="#" class="footer-social-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="footer-social-btn" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Home</a></li>
+            <li><a href="about.html"><i class="fa-solid fa-angle-right"></i> About Artist</a></li>
+            <li><a href="services.html"><i class="fa-solid fa-angle-right"></i> Services</a></li>
+            <li><a href="gallery.html"><i class="fa-solid fa-angle-right"></i> Mehndi Gallery</a></li>
+            <li><a href="bridal.html"><i class="fa-solid fa-angle-right"></i> Bridal Mehndi</a></li>
+            <li><a href="packages.html"><i class="fa-solid fa-angle-right"></i> Packages & Pricing</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Contact & Booking</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Mehndi Styles</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#bridal"><i class="fa-solid fa-angle-right"></i> Bridal Mehndi</a></li>
+            <li><a href="services.html#arabic"><i class="fa-solid fa-angle-right"></i> Arabic Mehndi</a></li>
+            <li><a href="services.html#traditional"><i class="fa-solid fa-angle-right"></i> Traditional Rajasthani</a></li>
+            <li><a href="services.html#indo-arabic"><i class="fa-solid fa-angle-right"></i> Indo-Arabic Fusion</a></li>
+            <li><a href="services.html#minimal"><i class="fa-solid fa-angle-right"></i> Modern Minimalist</a></li>
+            <li><a href="services.html#party"><i class="fa-solid fa-angle-right"></i> Party & Celebrations</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Studio & Bookings</h4>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>DHA Phase 5, Lahore, Pakistan<br>Available for Worldwide Destination Travel</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <span>+1 (234) 567-8900</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>+1 (234) 567-8900 (WhatsApp)</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <span>bookings@hennabydua.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-clock"></i>
+            <span>Mon - Sun: 10:00 AM - 8:00 PM<br>(By Prior Appointment Only)</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 HennaByDua. All Rights Reserved.
+        </div>
+        <div>
+          Designed for Luxury Bridal Artistry • 100% Organic Henna
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top of page">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
